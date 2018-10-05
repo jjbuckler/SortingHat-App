@@ -1,56 +1,67 @@
 @font-face {
   font-family: 'harry_potterregular';
   src: url('harrp___-webfont.woff2') format('woff2'),
-       url('harrp___-webfont.woff') format('woff');
+    url('harrp___-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
 
-body{
-  height:100%;
-  width:100%;
+body {
+  height: 100%;
+  width: 100%;
   font-family: harry_potterregular;
   font-size: 30px;
 }
-.houseInvisible{
+
+.houseInvisible {
   visibility: hidden;
 }
-.housevisible{
+
+.housevisible {
   visibility: visible;
 }
-#houseName{
+
+#houseName {
   text-align: center;
 }
-.sorting{
+
+.sorting {
   animation: hatRotate 1s 5;
 }
 
 @keyframes shake {
-  10%, 90% {
+
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
-  20%, 80% {
+
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }
 
 @keyframes hatRotate {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+
+  100% {
     transform: rotate(360deg);
-    
+
   }
-  
+
 }
