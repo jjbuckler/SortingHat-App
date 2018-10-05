@@ -1,26 +1,31 @@
-var y = document.getElementById("sortingHat");
 
+
+const y = document.getElementById("sortingHat");
+const houseLabel =  document.getElementById("houseName")
 // Code for Chrome, Safari and Opera
 y.addEventListener("webkitAnimationEnd", myEndFunction);
 
 function startSort(){
-  document.getElementById("houseName").className="houseInvisible"; 
-  document.getElementById("sortingHat").className="sorting";
+  console.log("here")
+ houseLabel.className="houseInvisible"; 
+  y.className="sorting";
 }
 function myEndFunction(){
   var x=Math.floor(Math.random() * 13);
-  console.log(x)
   if(x<=2){
-    
-    console.log("Griffindor");
+    houseLabel.innerHTML="Gryffindor!";
+
   } else if(x>2 && x<=5){
-    console.log("Slytherin");
+
+    houseLabel.innerHTML="Slytherin!";
+
   }
   else if (x>5 && x<=9){
-    console.log("HufflePuff");
+    houseLabel.innerHTML="Hufflepuff!";
   } else{
-      console.log("RavenClaw")
+    houseLabel.innerHTML="Ravenclaw!"
   }
-  document.getElementById("houseName").className="houseVisible";
+  y.className="";
+  houseLabel.className="houseVisible";
 }
 /*Modernizr */

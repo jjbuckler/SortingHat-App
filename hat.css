@@ -1,29 +1,21 @@
-@font-face {
-  font-family: 'harry_potterregular';
-  src: url('harrp___-webfont.woff2') format('woff2'),
-       url('harrp___-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-body{
-  height:100%;
-  width:100%;
-  font-family: harry_potterregular;
-  font-size: 30px;
-}
 .houseInvisible{
+  top:0px;
+  text-align: center;
   visibility: hidden;
 }
 .housevisible{
+  top:0px;
+  text-align: center;
   visibility: visible;
 }
-#houseName{
-  text-align: center;
+
+#sortingHat:hover{
+  /*animation: test 2s infinite;*/
+animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  
 }
 .sorting{
-  animation: hatRotate 1s 5;
+  animation: hatRotate 1s 10;
 }
 
 @keyframes shake {
